@@ -1,0 +1,7 @@
+body .container {
+    border-style: none;
+}
+.image>.float-left {
+    width: 150px;
+    height: 90px;
+}
