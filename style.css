@@ -4,8 +4,9 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-.nav {
-    align-items: center;
+.boxsearch {
+    display: flex;
+    -ms-flex-align: baseline;
 }
 .image>.float-left {
     width: 90px;
