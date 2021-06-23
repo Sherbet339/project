@@ -13,8 +13,20 @@
     height: 50px;
 }
 
-
+/*.tab,.boxsearch {
+    display: inline-block;
+}*/
 .box {
+    width: 400px;
+    margin: 2rm auto;
+    margin-top: 50px;
+    height: 500px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    overflow: hidden;
+    display: inline-block
+}
+.box1 {
     width: 400px;
     margin: 2rm auto;
     margin-top: 50px;
