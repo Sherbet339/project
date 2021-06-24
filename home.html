@@ -3,6 +3,21 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+
+
+
+
     </head>
 
     <body>
@@ -15,82 +30,60 @@
                     <li><a href="#" class="nav-link px-2 link-dark">Contact</a></li>   
                 </ul>
             </div>
+
             <div class="boxsearch">
-                <div class="d-flex col-6">
-                    <div class="image">
+                <div class="row">
+                    <div class="image d-flex align-items-end">
                         <img src="./images/speaker.png" class="float-left" alt="logo">
+                        
+                        <div class="col-6">
+                            <input type="search" class="form-control" placeholder="Search..." aria-label="Search"
+                                id="search">
+                        </div>
+                        
+                        <div class="sub">
+                            <button class="btn btn-secondary" type="submit" id="submit">Search</button>
+                        </div>
                     </div>
-                    <div>
-                        <input class="form-control form-control-borderless" type="search" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="container1">
+                <div class="row align-items-end ">
+                    <div class="col  align-self-start">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row" id="output">
+        
+        
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <button class="btn btn-secondary" type="submit">Search</button>
-                    </div>
                 </div>
-            </div>
-            <div class="box" id="myP" ondblclick="mouseClick()">
-                <div class="img">
-                    <img src="https://theppyng.files.wordpress.com/2019/07/heize-hotel-del-luna-ost-part-5.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h1>Hotel Del Luna</h1>
-                    <p>เรื่องราวของเจ้าของ "จางมันวอล" (ไอยู) โรงแรมจอมเรื่องมากที่ถูกจองจำให้อยู่ในโรงแรมแห่งนี้มาเป็นเวลากว่าพันปี ทางเดียวที่จะออกจากที่นี่ได้คือต้องหาคนที่ทำบาปกว่าเธอ</p>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="img">
-                    <img src="https://mukpetite.files.wordpress.com/2020/07/jtbc-_-when-the-weather-is-fine-07-1.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h1>When the Weather is Fine</h1>
-                    <p>เรื่องราวความรักแนวโรแมนติก อบอุ่นหัวใจของมกแฮวอน (รับบทโดย พัคมินยอง) หญิงสาวผู้เหนื่อยหน่ายกับการใช้ชีวิตในกรุงโซล จึงตัดสินใจย้ายกลับมาบ้านเกิดของเธอซึ่งเป็นเมืองเล็กๆซึ่งทำให้เธอได้กลับมาพบกับอิมอึนซอบ (รับบทโดย ซอคังจุน) ชายหนุ่มที่ดูแลกิจการร้านหนังสือในย่านที่แฮวอนอาศัยอยู่</p>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="img">
-                    <img src="https://c.min.ms/t/d/member/c/26/26466/pagegallery/1512736296/42aad56d.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h1>black knight</h1>
-                    <p>เรื่องราวของมูนซูโฮ (รับบทโดย คิมแรวอน) ชายหนุ่มที่จบการศึกษาดีและเป็นซีอีโอที่ประสบความสำเร็จ และจองแฮรา (รับบทโดย ชินเซคยอง) สาวออฟฟิศทำงานบริษัทท่องเที่ยว</p>
-                </div>
-            </div>
-
-
-
-            <div class="box1">
-                <div class="img">
-                    <img src="https://f.ptcdn.info/683/069/000/qbg2z49o8e4Q0ZfkId4-o.png" alt="">
-                </div>
-                <div class="content">
-                    <h1>Goblin</h1>
-                    <p>เรื่องราวของคิมชิน (กงยู) วีรบุรุษนักรบที่ถูกสาปให้เป็นทกแกบี (Goblin) เป็นผู้พิทักษ์วิญญาณที่ไม่มีวันตาย ตามหาเจ้าสาวของก็อบลินซึ่งเป็นผู้หญิงที่จะมาถอนคำสาปให้เขา</p>
-                </div>
-            </div>
-
-            <div class="box1">
-                <div class="img">
-                    <img src="https://asianwiki.com/images/a/ad/My_Roommate_Is_A_Gumiho-MP001.jpeg" alt="">
-                </div>
-                <div class="content">
-                    <h1>My Roommate is A Gumiho</h1>
-                    <p>เรื่องราวของชินอูยอ จิ้งจอกเก้าหาง(หรือกูมีโฮ Gumiho) อีกเพียงแค่ 1 ปีเท่านั้นชินอูยอจะได้กลายเป็นมนุษย์ แต่อีดัมดันไปกลืนลูกแก้วจิ้งจอกสีแดงของชินอูยอโดยไม่ตั้งใจ</p>
-                </div>
-            </div>
-
-            <div class="box1">
-                <div class="img">
-                    <img src="https://i1.wp.com/mereview.in.th/wp-content/uploads/2019/10/SEARCH_WWW.jpg?fit=1082%2C1516&ssl=1" alt="">
-                </div>
-                <div class="content">
-                    <h1>Search www</h1>
-                    <p>เรื่องราวเล่าถึงชีวิตและการทำงานของ 3 สาววัยเลข 3 ที่คลั่งไคล้การทำงานมากกว่าจะใส่ใจงานบ้านหรือหาคู่ครองมาแต่งงานพวกเธอทำงานเป็นผู้บริหารอยู่ในองค์กรที่ทำเว็บท่ารายใหญ่ของประเทศเกาหลีใต้</p>
-                </div>
-            </div>
+            </div>  
         </div>
         <script type="text/javascript" src="script.js"></script>
+        
+
+
+
+
+
+
+
+
     </body>
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright:
+          <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+
+    
 
 </html>
