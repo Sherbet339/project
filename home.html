@@ -1,18 +1,11 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-
-        
-        <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        
-
-
-
-
     </head>
 
     <body>
@@ -21,7 +14,6 @@
                 
                 <ul class="nav">
                     <li><a href="home.html" class="nav-link px-2 link-secondary">Home</a></li>
-                    <li><a href="movie.html" class="nav-link px-2 link-dark">Movie</a></li>
                     <li><a href="favorite.html" class="nav-link px-2 link-dark">My list</a></li>
                     <li><a href="#" class="nav-link px-2 link-dark">Contact</a></li>   
                 </ul>
@@ -30,7 +22,7 @@
             <div class="boxsearch">
                 <div class="row">
                     <div class="d-flex align-items-end">
-                        <div class="col-6">
+                        <div class="col-10">
                             <input type="search" class="form-control" placeholder="Search..." aria-label="Search"
                                 id="search">
                         </div>
@@ -41,6 +33,21 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="row" id="output1"></div>
+
+<script>
+            output1.innerHTML=''
+            fetch(`https://api.jikan.moe/v3/search/anime?q=${search}`)
+                .then((response) => {
+                    console.log('not found')
+        
+                    return response.json()
+                }).then((data => {
+                    Search(data.results)
+                }))
+</script>
 
             <div class="container1">
                 <div class="row align-items-end ">
@@ -57,27 +64,19 @@
                 </div>
             </div>  
         </div>
+
         <script type="text/javascript" src="script.js"></script>
         
-
-
-
-
-
-
-
-
     </body>
+
+
     <footer class="bg-light text-center text-lg-start">
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2020 Copyright:
-          <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+          © 2021 Copyright:
+          <a class="text-dark" href="https://mdbootstrap.com/">BeautySherbet.com</a>
         </div>
         <!-- Copyright -->
       </footer>
-
-
-    
 
 </html>
