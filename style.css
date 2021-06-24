@@ -8,12 +8,12 @@
     margin-right: 60px;
     float: right;
 }
-.image ,img {
-    width: 90px;
-    height: 50px;
+img {
 
 }
-
+name {
+    text-align: center;
+}
 .tab,.boxsearch {
     display: inline-block;
 }
