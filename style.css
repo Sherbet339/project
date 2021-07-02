@@ -27,6 +27,8 @@ div {
 }
 .card
 {
+    display: flex;
+    flex-flow: row nowrap;
     margin-bottom: 20px;
     background: #111;
     color: black;

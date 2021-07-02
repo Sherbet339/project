@@ -1,6 +1,10 @@
 var output1 = document.getElementById('output1')
 var id = 632110339
 
+
+
+
+
 function addcardOnMylist(data) {
     let Allmight = document.createElement('div')
     Allmight.classList.add("col-3")
