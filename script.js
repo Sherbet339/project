@@ -4,7 +4,6 @@ var id = 632110339
 function addcardOnMylist(data) {
     let Allmight = document.createElement('div')
     Allmight.classList.add("col-3")
-
     let one = document.createElement('div')
     one.classList.add("card")
 
@@ -17,9 +16,11 @@ function addcardOnMylist(data) {
     inone.classList.add("card-body")
     let H5 = document.createElement('h5')
     H5.classList.add("card-title")
+
     let name = data.title
     H5.innerHTML = name
     inone.appendChild(H5)
+
     let button = document.createElement('button')
     button.classList.add('btn')
     button.classList.add('btn-success')
@@ -29,6 +30,7 @@ function addcardOnMylist(data) {
         output1.innerHTML=''
         showDetail(data)
     })
+
     let buttond = document.createElement('button')
     buttond.classList.add('btn')
     buttond.classList.add('btn-danger')
@@ -40,16 +42,8 @@ function addcardOnMylist(data) {
 
             deleteMovie(data.id)
             output1.innerHTML=''
-        }
-        
-        
+        }  
     })
-
-
-
-
-
-
 
     one.appendChild(img)
     one.appendChild(inone)
@@ -58,6 +52,9 @@ function addcardOnMylist(data) {
     Allmight.appendChild(one)
     output1.appendChild(Allmight)
 }
+
+
+
 function MyList(dataList) {
 
     for (data of dataList) {
@@ -65,6 +62,9 @@ function MyList(dataList) {
         addcardOnMylist(data)
     }
 }
+
+
+
 function onLoad() {
     fetch('https://se104-project-backend.du.r.appspot.com/movies/632110339')
         .then((response) => {
@@ -73,6 +73,9 @@ function onLoad() {
             MyList(data)
         })
 }
+
+
+
 function deleteMovie(id){
     fetch(`https://se104-project-backend.du.r.appspot.com/movie?id=632110339&&movieId=${id}`,{
         method :'DELETE'
@@ -89,6 +92,9 @@ function deleteMovie(id){
         alert ('Error')
     })
 }
+
+
+
 function showDetail(data){
     let overAll = document.createElement('div')
     overAll.classList.add("row")
@@ -114,8 +120,8 @@ function showDetail(data){
     
     one.appendChild(img)
     Allmight.appendChild(one)
-     let txtName =document.createElement('div')
-     txtName.classList.add('col-9')
+    let txtName =document.createElement('div')
+    txtName.classList.add('col-9')
     let url = data.url
     let title = data.title
     let synopsis = data.synopsis
@@ -158,10 +164,6 @@ function showDetail(data){
     txtName.appendChild(row1)
     txtName.appendChild(row2)
     
-
-
-
-
     
     overAll.appendChild(Allmight)
     overAll.appendChild(txtName)
@@ -186,6 +188,9 @@ document.getElementById('submit').addEventListener('click', function (e) {
         }))
 
 })
+
+
+
 function Search(dataList) {
 
     for (data of dataList) {
@@ -194,6 +199,9 @@ function Search(dataList) {
 
     }
 }
+
+
+
 function addcard(movie) {
 
     let Allmight = document.createElement('div')
@@ -216,9 +224,6 @@ function addcard(movie) {
     inone.appendChild(H5)
 
 
-
-
-
     one.appendChild(img)
     one.appendChild(inone)
     Allmight.appendChild(one)
@@ -235,6 +240,9 @@ function addcard(movie) {
     })
     output1.appendChild(Allmight)
 }
+
+
+
 function addtoMylistToDB(al) {
     fetch(`https://se104-project-backend.du.r.appspot.com/movies`, {
         method: 'POST',

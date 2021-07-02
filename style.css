@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 .boxsearch {
     margin-right: 60px;
@@ -19,4 +19,19 @@
 .tab,.boxsearch {
     display: inline-block;
 }
+
+div {
+    background-color: wheat;
+    margin: 0;
+    padding: 0;
+}
+.card
+{
+    margin-bottom: 20px;
+    background: #111;
+    color: black;
+    transition: 0.5s;
+}
+
+
 
