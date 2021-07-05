@@ -2,9 +2,6 @@ var output1 = document.getElementById('output1')
 var id = 632110339
 
 
-Document.getElementById('home').addEventListener('click', function(e) {
-    document.getElementById('home').style.backgroundColor = `rgb(252, 160, 137)`
-})
 
 
 function addcardOnMylist(data) {
